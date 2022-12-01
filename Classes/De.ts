@@ -1,6 +1,15 @@
-import Gobelet from "./Gobelet";
+export default class De {
+    protected _valeur: number 
+        
+    get valeur (): number {
+        return this._valeur;
+    }
 
-export default class De extends Gobelet {
-    public valeur = number;
+    set valeur (nouvelleValeur: number) {
+        this._valeur = nouvelleValeur;
+    }
+    lancer(): void {
+        this._valeur = Math.floor(Math.random() * 5) + 1;
+    } 
+};
     
-}
